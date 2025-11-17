@@ -51,39 +51,6 @@ Node* findmax (Node* root){
     
 } 
 
-Node* deletebst(Node* root , int val ){
-    if(root == NULL ){
-        return NULL;
-    }
-
-    if(val < root -> data){
-        root->left = deletebst(root->left , val);
-    }
-    else if(val > root->data) {
-        root-> right = deletebst(root->right , val);
-    }
-    else {
-        if(root->right == NULL && root ->left == NULL){
-            return NULL;
-        }
-
-        else if(root ->right == NULL ){
-            return root -> left ;
-        }
-
-        else if(root ->left == NULL ){
-            return root -> right ;
-        }
-
-        else{
-            Node* temp = findMin( root-> right);
-            root->data = temp->data;
-            root -> right = deletebst(root -> right , temp->data );
-
-        }
-            return root;
-    }
-}
 
 
 int main() {
