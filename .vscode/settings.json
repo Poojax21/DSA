@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "deletebstnodecpp": "c"
+        "deletebstnodecpp": "c",
+        "iostream": "cpp"
     }
 }
