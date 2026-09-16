@@ -35,7 +35,7 @@ class FLoccur{
     int Loccurence(vector<int> arr , int x){
 
         int n = arr.size();
-         int low = 0;
+        int low = 0;
         int high = n - 1;
         int F  =-1; 
         int L = -1;
